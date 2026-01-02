@@ -13,6 +13,22 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  // Custom rules for Tailwind v4 compatibility
+  {
+    rules: {
+      "no-restricted-syntax": [
+        "error",
+        {
+          selector: "JSXAttribute[name.name='className'] Literal[value=/space-[xy]-/]",
+          message: "Use gap-* instead of space-x-*/space-y-* for Tailwind v4 compatibility"
+        },
+        {
+          selector: "TemplateElement[value.raw=/space-[xy]-/]",
+          message: "Use gap-* instead of space-x-*/space-y-* for Tailwind v4 compatibility"
+        }
+      ]
+    }
+  }
 ]);
 
 export default eslintConfig;

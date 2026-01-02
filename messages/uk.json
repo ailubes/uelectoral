@@ -1,0 +1,18 @@
+{
+  "common": {
+    "loading": "Завантаження...",
+    "error": "Помилка"
+  },
+  "nav": {
+    "home": "Головна",
+    "methodology": "Методологія",
+    "countryDirection": "Вектор руху",
+    "president": "Президент",
+    "parliament": "Парламент"
+  },
+  "theme": {
+    "light": "Світла",
+    "dark": "Темна",
+    "system": "Системна"
+  }
+}
