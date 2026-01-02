@@ -51,10 +51,10 @@ export function CountryDirectionSection() {
       <div className="flex flex-col gap-8">
         {/* Section header */}
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             {t("nav.countryDirection")}
           </h2>
-          <p className="text-muted-foreground text-lg max-w-4xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-4xl mx-auto px-4">
             {question}
           </p>
         </div>
@@ -71,7 +71,7 @@ export function CountryDirectionSection() {
         </div>
 
         {/* Statistical note */}
-        <p className="text-sm text-muted-foreground text-center">
+        <p className="text-xs sm:text-sm text-muted-foreground text-center px-4 leading-relaxed">
           {locale === "uk"
             ? "Дані на основі щомісячних опитувань. Вибірка: 1000 респондентів."
             : "Data based on monthly surveys. Sample: 1000 respondents."}

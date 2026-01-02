@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import {
   LineChart as RechartsLineChart,
   Line,
@@ -47,8 +48,27 @@ export function LineChart({
   showLegend = true,
   showTooltip = true,
 }: LineChartProps) {
+  // Track window width for responsive behavior
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Set initial value
+    handleResize();
+
+    // Listen for resize events
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Make chart height responsive: shorter on mobile
+  const responsiveHeight = isMobile ? 300 : height;
+
   return (
-    <ResponsiveContainer width="100%" height={height}>
+    <ResponsiveContainer width="100%" height={responsiveHeight}>
       <RechartsLineChart
         data={data}
         margin={chartConfig.margin}
@@ -68,6 +88,7 @@ export function LineChart({
           angle={-45}
           textAnchor="end"
           height={60}
+          interval={isMobile ? "preserveStartEnd" : "preserveStart"}
         />
 
         <YAxis
@@ -87,8 +108,12 @@ export function LineChart({
 
         {showLegend && (
           <Legend
-            wrapperStyle={chartConfig.legend.wrapperStyle}
+            wrapperStyle={{
+              ...chartConfig.legend.wrapperStyle,
+              paddingTop: '20px',
+            }}
             iconType={chartConfig.legend.iconType}
+            layout={isMobile ? 'vertical' : 'horizontal'}
           />
         )}
 

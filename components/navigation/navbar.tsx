@@ -100,7 +100,7 @@ export function Navbar() {
             <ThemeToggle />
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" aria-label="Toggle menu">
+                <Button variant="ghost" size="icon" className="h-11 w-11" aria-label="Toggle menu">
                   {mobileMenuOpen ? (
                     <X className="h-5 w-5" />
                   ) : (

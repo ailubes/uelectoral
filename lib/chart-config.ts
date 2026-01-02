@@ -35,11 +35,11 @@ export const chartConfig = {
     height: 400,
   },
 
-  // Margin for charts
+  // Margin for charts (mobile-friendly)
   margin: {
     top: 20,
-    right: 30,
-    left: 20,
+    right: 10,
+    left: 10,
     bottom: 60,
   },
 

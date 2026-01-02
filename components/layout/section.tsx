@@ -48,7 +48,7 @@ export const Section = forwardRef<HTMLElement, SectionProps>(
         ref={ref}
         id={id}
         className={cn(
-          "py-12 md:py-16 lg:py-20",
+          "py-12 sm:py-16 md:py-20 lg:py-24",
           minHeightClass,
           backgroundClass,
           className

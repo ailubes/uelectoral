@@ -42,10 +42,10 @@ export function MethodologySection() {
       <div className="flex flex-col gap-8">
         {/* Section header */}
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             {t("nav.methodology")}
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base sm:text-lg">
             {locale === "uk"
               ? `${currentSurvey.displayDate.uk} та ${previousSurvey.displayDate.uk}`
               : `${currentSurvey.displayDate.en} and ${previousSurvey.displayDate.en}`}

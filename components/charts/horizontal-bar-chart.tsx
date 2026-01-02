@@ -72,63 +72,67 @@ export function HorizontalBarChart({
   showTooltip = true,
 }: HorizontalBarChartProps) {
   return (
-    <ResponsiveContainer width="100%" height={height}>
-      <BarChart
-        data={data}
-        layout="vertical"
-        margin={{ top: 20, right: 100, left: 20, bottom: 20 }}
-      >
-        {showGrid && (
-          <CartesianGrid
-            strokeDasharray={chartConfig.grid.strokeDasharray}
-            stroke={chartConfig.grid.stroke}
-          />
-        )}
+    <div className="w-full overflow-x-auto">
+      <div className="min-w-[600px]">
+        <ResponsiveContainer width="100%" height={height}>
+          <BarChart
+            data={data}
+            layout="vertical"
+            margin={{ top: 20, right: 100, left: 120, bottom: 20 }}
+          >
+            {showGrid && (
+              <CartesianGrid
+                strokeDasharray={chartConfig.grid.strokeDasharray}
+                stroke={chartConfig.grid.stroke}
+              />
+            )}
 
-        <XAxis
-          type="number"
-          tick={chartConfig.axis.style}
-          stroke={chartConfig.axis.stroke}
-          tickFormatter={formatPercent}
-          domain={[0, 30]}
-        />
+            <XAxis
+              type="number"
+              tick={chartConfig.axis.style}
+              stroke={chartConfig.axis.stroke}
+              tickFormatter={formatPercent}
+              domain={[0, 30]}
+            />
 
-        <YAxis
-          type="category"
-          dataKey="name"
-          tick={<CustomYAxisTick />}
-          stroke={chartConfig.axis.stroke}
-          width={180}
-        />
+            <YAxis
+              type="category"
+              dataKey="name"
+              tick={<CustomYAxisTick />}
+              stroke={chartConfig.axis.stroke}
+              width={180}
+            />
 
-        {showTooltip && (
-          <Tooltip
-            contentStyle={chartConfig.tooltip.contentStyle}
-            cursor={chartConfig.tooltip.cursor}
-            formatter={(value: number | undefined) => value !== undefined ? formatPercent(value) : ""}
-          />
-        )}
+            {showTooltip && (
+              <Tooltip
+                contentStyle={chartConfig.tooltip.contentStyle}
+                cursor={chartConfig.tooltip.cursor}
+                formatter={(value: number | undefined) => value !== undefined ? formatPercent(value) : ""}
+              />
+            )}
 
-        {showLegend && (
-          <Legend
-            wrapperStyle={chartConfig.legend.wrapperStyle}
-          />
-        )}
+            {showLegend && (
+              <Legend
+                wrapperStyle={chartConfig.legend.wrapperStyle}
+              />
+            )}
 
-        <Bar
-          dataKey="current"
-          name={currentLabel}
-          fill={chartColors.primary}
-          radius={[0, 4, 4, 0]}
-        />
+            <Bar
+              dataKey="current"
+              name={currentLabel}
+              fill={chartColors.primary}
+              radius={[0, 4, 4, 0]}
+            />
 
-        <Bar
-          dataKey="previous"
-          name={previousLabel}
-          fill={chartColors.secondary}
-          radius={[0, 4, 4, 0]}
-        />
-      </BarChart>
-    </ResponsiveContainer>
+            <Bar
+              dataKey="previous"
+              name={previousLabel}
+              fill={chartColors.secondary}
+              radius={[0, 4, 4, 0]}
+            />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
   );
 }

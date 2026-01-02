@@ -30,17 +30,17 @@ export function PresidentialElectionSection() {
     <Section id="president" minHeight="auto" background="default">
       <Card>
         <CardHeader>
-          <CardTitle className="text-3xl md:text-4xl text-center">
+          <CardTitle className="text-2xl sm:text-3xl md:text-4xl text-center">
             {t("nav.president")}
           </CardTitle>
-          <p className="text-muted-foreground text-center text-lg mt-2">
+          <p className="text-muted-foreground text-center text-base sm:text-lg mt-2">
             {question}
           </p>
         </CardHeader>
 
         <CardContent className="flex flex-col gap-6">
           {/* Legend */}
-          <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 text-sm">
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 rounded bg-[var(--chart-primary)]" />
               <span>{currentDate}</span>
@@ -67,7 +67,7 @@ export function PresidentialElectionSection() {
               <Button
                 variant="outline"
                 onClick={() => setShowAll(!showAll)}
-                className="gap-2"
+                className="gap-2 w-full sm:w-auto"
               >
                 {showAll ? (
                   <>
@@ -87,8 +87,8 @@ export function PresidentialElectionSection() {
           )}
 
           {/* Statistical Note */}
-          <div className="text-xs text-muted-foreground text-center pt-4 border-t">
-            <p>
+          <div className="text-xs sm:text-sm text-muted-foreground text-center pt-4 border-t px-2">
+            <p className="leading-relaxed">
               {locale === "uk"
                 ? "Опитування проведено 17-26 грудня 2025 року методом телефонного інтерв'ю CATI. Вибірка: 1000 респондентів віком 18+. Теоретична похибка не перевищує 3,1% з вірогідністю 0,95."
                 : "Survey conducted December 17-26, 2025 via CATI telephone interview. Sample: 1000 respondents aged 18+. Theoretical margin of error does not exceed 3.1% with 0.95 confidence."}
