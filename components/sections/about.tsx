@@ -31,7 +31,7 @@ export function AboutSection() {
 
 Детальніше про зміни в динаміці зміни оцінок правильності напрямку, а також про волотильність електоральних оцінок Ви довідаєтесь з аналізу грудневих результатів U electoral data Project.
 
-Нагадую, що U electoral data project є спільною дослідницькою ініціативою з оприлюднення обʼєктивної електоральної оцінки суспільних настроїв в рамках Омнібусу компанії Info Sapiens та Public Policy Development Office - PPDO.
+Нагадую, що U electoral data Project є спільною дослідницькою ініціативою з оприлюднення обʼєктивної електоральної оцінки суспільних настроїв в рамках Омнібусу компанії Info Sapiens та Public Policy Development Office - PPDO.
 
 Місією U electoral data Project є надан суспільству, науково-експертному середовищу та журналістам доступу до достовірних даних електоральних настроїв в Україні.
 
@@ -71,7 +71,7 @@ Such was 2025 according to respondents who answered questions in telephone socio
 
 You will learn more about changes in the dynamics of directional assessments, as well as the volatility of electoral ratings, from the analysis of December results of the U electoral data Project.
 
-As a reminder, the U electoral data project is a joint research initiative for publishing objective electoral assessments of public sentiment within the framework of Info Sapiens' Omnibus and the Public Policy Development Office - PPDO.
+As a reminder, the U electoral data Project is a joint research initiative for publishing objective electoral assessments of public sentiment within the framework of Info Sapiens' Omnibus and the Public Policy Development Office - PPDO.
 
 The mission of the U electoral data Project is to provide society, the scientific-expert community, and journalists with access to reliable data on electoral sentiments in Ukraine.
 
