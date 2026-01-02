@@ -3,6 +3,7 @@
 import { Navbar } from "@/components/navigation";
 import {
   HeroSection,
+  AboutSection,
   MethodologySection,
   CountryDirectionSection,
   PresidentialElectionSection,
@@ -18,6 +19,7 @@ export default function Home() {
       {/* Add top padding to account for fixed navbar */}
       <div className="pt-16">
         <HeroSection />
+        <AboutSection />
         <MethodologySection />
         <CountryDirectionSection />
         <PresidentialElectionSection />

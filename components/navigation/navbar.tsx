@@ -14,6 +14,7 @@ import { cn } from "@/lib/utils";
 // Navigation section IDs (will be updated when real sections are created)
 const NAVIGATION_SECTIONS = [
   { id: "home", labelKey: "nav.home" },
+  { id: "about", labelKey: "nav.about" },
   { id: "methodology", labelKey: "nav.methodology" },
   { id: "countryDirection", labelKey: "nav.countryDirection" },
   { id: "president", labelKey: "nav.president" },
