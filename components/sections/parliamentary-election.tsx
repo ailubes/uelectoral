@@ -87,11 +87,13 @@ export function ParliamentaryElectionSection() {
           )}
 
           {/* Statistical Note */}
-          <p className="text-sm text-muted-foreground text-center">
-            {locale === "uk"
-              ? "Серед тих, хто визначився. Похибка вибірки не перевищує 3,1%."
-              : "Among those who have decided. Sampling error does not exceed 3.1%."}
-          </p>
+          <div className="text-xs text-muted-foreground text-center pt-4 border-t">
+            <p>
+              {locale === "uk"
+                ? "Опитування проведено 17-26 грудня 2025 року методом телефонного інтерв'ю CATI. Вибірка: 1000 респондентів віком 18+. Теоретична похибка не перевищує 3,1% з вірогідністю 0,95."
+                : "Survey conducted December 17-26, 2025 via CATI telephone interview. Sample: 1000 respondents aged 18+. Theoretical margin of error does not exceed 3.1% with 0.95 confidence."}
+            </p>
+          </div>
         </CardContent>
       </Card>
     </Section>

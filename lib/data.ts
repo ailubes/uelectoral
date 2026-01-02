@@ -743,8 +743,13 @@ export function transformPresidentialForChart(locale: Locale) {
     const isSignificant = candidate.results[currentPeriod]?.isSignificant || false;
     const { change, direction } = calculateChange(current, previous);
 
+    const baseName = getBilingualText(candidate.name, locale);
+    const displayName = isSignificant && direction !== "neutral"
+      ? `${baseName} ${direction === "up" ? "↑" : "↓"}`
+      : baseName;
+
     return {
-      name: getBilingualText(candidate.name, locale),
+      name: displayName,
       current,
       previous,
       change,
@@ -772,8 +777,13 @@ export function transformParliamentaryForChart(locale: Locale) {
     const isSignificant = party.results[currentPeriod]?.isSignificant || false;
     const { change, direction } = calculateChange(current, previous);
 
+    const baseName = getBilingualText(party.name, locale);
+    const displayName = isSignificant && direction !== "neutral"
+      ? `${baseName} ${direction === "up" ? "↑" : "↓"}`
+      : baseName;
+
     return {
-      name: getBilingualText(party.name, locale),
+      name: displayName,
       current,
       previous,
       change,

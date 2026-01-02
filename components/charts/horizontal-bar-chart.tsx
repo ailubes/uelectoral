@@ -30,6 +30,38 @@ export interface HorizontalBarChartProps {
   showTooltip?: boolean;
 }
 
+// Custom YAxis tick component to color the change indicators
+const CustomYAxisTick = ({ x, y, payload }: any) => {
+  const text = payload.value;
+  const hasUpIndicator = text.includes('↑');
+  const hasDownIndicator = text.includes('↓');
+
+  if (hasUpIndicator || hasDownIndicator) {
+    // Split text and indicator
+    const parts = text.split(/(↑|↓)/);
+
+    return (
+      <g transform={`translate(${x},${y})`}>
+        <text x={0} y={0} dy={4} textAnchor="end" fontSize={14} fontWeight={500}>
+          <tspan fill="var(--foreground)">{parts[0]}</tspan>
+          <tspan
+            fill={hasUpIndicator ? 'var(--chart-primary)' : 'var(--accent)'}
+            fontWeight={700}
+          >
+            {parts[1]}
+          </tspan>
+        </text>
+      </g>
+    );
+  }
+
+  return (
+    <text x={x} y={y} dy={4} textAnchor="end" fontSize={14} fontWeight={500} fill="var(--foreground)">
+      {text}
+    </text>
+  );
+};
+
 export function HorizontalBarChart({
   data,
   height = 600,
@@ -64,7 +96,7 @@ export function HorizontalBarChart({
         <YAxis
           type="category"
           dataKey="name"
-          tick={chartConfig.axis.style}
+          tick={<CustomYAxisTick />}
           stroke={chartConfig.axis.stroke}
           width={180}
         />
