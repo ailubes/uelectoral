@@ -1,0 +1,1538 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "project": {
+      "id": "uelectoral-data",
+      "name": {
+        "uk": "U electoral data Project",
+        "en": "U Electoral Data Project"
+      },
+      "fullTitle": {
+        "uk": "Результати дослідження електоральних настроїв в рамках U electoral data Project",
+        "en": "Results of Electoral Sentiment Research within U Electoral Data Project"
+      }
+    },
+    "source": {
+      "name": "Info Sapiens",
+      "shortName": "IS",
+      "website": "https://sapiens.com.ua"
+    },
+    "commissioner": {
+      "name": {
+        "uk": "Public policy development office",
+        "en": "Public Policy Development Office"
+      },
+      "shortName": "PPDO"
+    },
+    "preparedBy": {
+      "uk": "Підготовлено Info Sapiens на замовлення Public policy development office",
+      "en": "Prepared by Info Sapiens commissioned by Public Policy Development Office"
+    },
+    "lastUpdated": "2025-12-26T00:00:00Z",
+    "currentSurvey": "2025-12",
+    "previousSurvey": "2025-11"
+  },
+  "methodology": {
+    "method": {
+      "title": {
+        "uk": "Метод",
+        "en": "Method"
+      },
+      "value": {
+        "uk": "Телефонне інтерв'ю CATI (Computer Assisted Telephone Interviewing)",
+        "en": "CATI Telephone Interview (Computer Assisted Telephone Interviewing)"
+      },
+      "details": {
+        "uk": "Омнібус, 17-26 грудня 2025 року. Електоральний Омнібус проводиться з 2007 року щомісячно.",
+        "en": "Omnibus, December 17-26, 2025. Electoral Omnibus has been conducted monthly since 2007."
+      }
+    },
+    "targetAudience": {
+      "title": {
+        "uk": "Цільова аудиторія",
+        "en": "Target Audience"
+      },
+      "value": {
+        "uk": "Чоловіки/жінки віком 18+ років",
+        "en": "Men/Women aged 18+ years"
+      }
+    },
+    "sample": {
+      "title": {
+        "uk": "Вибірка",
+        "en": "Sample"
+      },
+      "size": 1000,
+      "value": {
+        "uk": "1000 респондентів. Вибірка репрезентативна для населення (віком 18 років і старше) за статтю, віком, розміром населеного пункту, областю (згідно даним Державної служби статистики станом на 1.01.2022)",
+        "en": "1000 respondents. Sample is representative of the population (aged 18 and older) by gender, age, settlement size, and region (according to State Statistics Service data as of 01.01.2022)"
+      }
+    },
+    "marginOfError": {
+      "title": {
+        "uk": "Похибка",
+        "en": "Margin of Error"
+      },
+      "value": 3.1,
+      "confidenceLevel": 0.95,
+      "text": {
+        "uk": "Теоретична похибка вибірки не перевищує 3,1% з вірогідністю 0.95%.",
+        "en": "Theoretical sampling error does not exceed 3.1% with 0.95 probability."
+      }
+    }
+  },
+  "surveys": {
+    "2025-12": {
+      "id": "2025-12",
+      "date": "2025-12-26",
+      "period": {
+        "start": "2025-12-17",
+        "end": "2025-12-26"
+      },
+      "displayDate": {
+        "uk": "26 грудня 2025",
+        "en": "December 26, 2025"
+      },
+      "monthName": {
+        "uk": "Грудень 2025",
+        "en": "December 2025"
+      },
+      "shortMonth": {
+        "uk": "Груд. 2025",
+        "en": "Dec 2025"
+      }
+    },
+    "2025-11": {
+      "id": "2025-11",
+      "date": "2025-11-28",
+      "period": {
+        "start": "2025-11-13",
+        "end": "2025-11-28"
+      },
+      "displayDate": {
+        "uk": "28 листопада 2025",
+        "en": "November 28, 2025"
+      },
+      "monthName": {
+        "uk": "Листопад 2025",
+        "en": "November 2025"
+      },
+      "shortMonth": {
+        "uk": "Лист. 2025",
+        "en": "Nov 2025"
+      }
+    },
+    "2025-10": {
+      "id": "2025-10",
+      "date": "2025-10-28",
+      "period": {
+        "start": "2025-10-15",
+        "end": "2025-10-28"
+      },
+      "displayDate": {
+        "uk": "28 жовтня 2025",
+        "en": "October 28, 2025"
+      },
+      "monthName": {
+        "uk": "Жовтень 2025",
+        "en": "October 2025"
+      },
+      "shortMonth": {
+        "uk": "Жовт. 2025",
+        "en": "Oct 2025"
+      }
+    }
+  },
+  "countryDirection": {
+    "title": {
+      "uk": "Вектор руху країни",
+      "en": "Country Direction"
+    },
+    "question": {
+      "uk": "Як ви думаєте, справи в Україні в цілому розвиваються у правильному напрямку чи вам здається, що країна рухається неправильним шляхом?",
+      "en": "Do you think things in Ukraine are generally developing in the right direction, or do you feel the country is moving in the wrong direction?"
+    },
+    "yAxisLabel": {
+      "uk": "% респондентів",
+      "en": "% of respondents"
+    },
+    "series": {
+      "wrongDirection": {
+        "id": "wrongDirection",
+        "label": {
+          "uk": "Неправильним шляхом",
+          "en": "Wrong direction"
+        },
+        "color": "magenta"
+      },
+      "rightDirection": {
+        "id": "rightDirection",
+        "label": {
+          "uk": "У правильному напрямку",
+          "en": "Right direction"
+        },
+        "color": "teal"
+      },
+      "hardToSay": {
+        "id": "hardToSay",
+        "label": {
+          "uk": "Важко відповісти",
+          "en": "Hard to say"
+        },
+        "color": "gray"
+      }
+    },
+    "timeSeries": [
+      {
+        "period": "03'2022",
+        "month": "2022-03",
+        "rightDirection": 80.42051345068938,
+        "wrongDirection": 9.401298731806282,
+        "hardToSay": 10.178187817504325
+      },
+      {
+        "period": "04'2022",
+        "month": "2022-04",
+        "rightDirection": 84.84877996106046,
+        "wrongDirection": 7.488879978840547,
+        "hardToSay": 7.662340060098992
+      },
+      {
+        "period": "05'2022",
+        "month": "2022-05",
+        "rightDirection": 78.2232258441648,
+        "wrongDirection": 10.430263686914591,
+        "hardToSay": 11.346510468920602
+      },
+      {
+        "period": "06'2022",
+        "month": "2022-06",
+        "rightDirection": 73.02192419623256,
+        "wrongDirection": 12.604428716287078,
+        "hardToSay": 14.373647087480352
+      },
+      {
+        "period": "07'2022",
+        "month": "2022-07",
+        "rightDirection": 70.22156260219667,
+        "wrongDirection": 16.28124225863572,
+        "hardToSay": 13.497195139167612
+      },
+      {
+        "period": "08'2022",
+        "month": "2022-08",
+        "rightDirection": 73.27986881221081,
+        "wrongDirection": 13.868399457527305,
+        "hardToSay": 12.851731730261898
+      },
+      {
+        "period": "09'2022",
+        "month": "2022-09",
+        "rightDirection": 81.03775998466982,
+        "wrongDirection": 8.792337029648284,
+        "hardToSay": 10.169902985681897
+      },
+      {
+        "period": "10'2022",
+        "month": "2022-10",
+        "rightDirection": 83.74915650116502,
+        "wrongDirection": 6.826437263240412,
+        "hardToSay": 9.424406235594574
+      },
+      {
+        "period": "11'2022",
+        "month": "2022-11",
+        "rightDirection": 78.2787073615049,
+        "wrongDirection": 8.720252958376534,
+        "hardToSay": 13.001039680118561
+      },
+      {
+        "period": "12'2022",
+        "month": "2022-12",
+        "rightDirection": 75.32089546270304,
+        "wrongDirection": 11.261695725695747,
+        "hardToSay": 13.417408811601211
+      },
+      {
+        "period": "01'2023",
+        "month": "2023-01",
+        "rightDirection": 76.21780433892948,
+        "wrongDirection": 11.3248669703992,
+        "hardToSay": 12.457328690671316
+      },
+      {
+        "period": "02'2023",
+        "month": "2023-02",
+        "rightDirection": 75.34841984722483,
+        "wrongDirection": 13.461814608888098,
+        "hardToSay": 11.189765543887068
+      },
+      {
+        "period": "03'2023",
+        "month": "2023-03",
+        "rightDirection": 73.76551097736449,
+        "wrongDirection": 15.911877293215367,
+        "hardToSay": 10.32261172942015
+      },
+      {
+        "period": "04'2023",
+        "month": "2023-04",
+        "rightDirection": 68.69032487627165,
+        "wrongDirection": 18.790135099216727,
+        "hardToSay": 12.519540024511622
+      },
+      {
+        "period": "05'2023",
+        "month": "2023-05",
+        "rightDirection": 72.71939185213472,
+        "wrongDirection": 17.966365638043367,
+        "hardToSay": 9.31424250982191
+      },
+      {
+        "period": "06'2023",
+        "month": "2023-06",
+        "rightDirection": 67.0166631381427,
+        "wrongDirection": 19.624976219052286,
+        "hardToSay": 13.358360642805012
+      },
+      {
+        "period": "07'2023",
+        "month": "2023-07",
+        "rightDirection": 59.06102965392682,
+        "wrongDirection": 28.356541751086557,
+        "hardToSay": 12.582428594986622
+      },
+      {
+        "period": "08'2023",
+        "month": "2023-08",
+        "rightDirection": 56.11328122227393,
+        "wrongDirection": 29.767325964491253,
+        "hardToSay": 14.119392813234807
+      },
+      {
+        "period": "09'2023",
+        "month": "2023-09",
+        "rightDirection": 58.293484125762916,
+        "wrongDirection": 27.52513728346878,
+        "hardToSay": 14.181378590768299
+      },
+      {
+        "period": "10'2023",
+        "month": "2023-10",
+        "rightDirection": 49.04713566697634,
+        "wrongDirection": 35.97851481717241,
+        "hardToSay": 14.974349515851252
+      },
+      {
+        "period": "11'2023",
+        "month": "2023-11",
+        "rightDirection": 52.91972001072046,
+        "wrongDirection": 33.419579949982726,
+        "hardToSay": 13.660700039296808
+      },
+      {
+        "period": "12'2023",
+        "month": "2023-12",
+        "rightDirection": 44.11844323073605,
+        "wrongDirection": 38.11927147126142,
+        "hardToSay": 17.762285298002524
+      },
+      {
+        "period": "01'2024",
+        "month": "2024-01",
+        "rightDirection": 47.127873916013705,
+        "wrongDirection": 38.864987844436335,
+        "hardToSay": 14.00713823954996
+      },
+      {
+        "period": "02'2024",
+        "month": "2024-02",
+        "rightDirection": 35.90130610713981,
+        "wrongDirection": 48.16225920125027,
+        "hardToSay": 15.936434691609916
+      },
+      {
+        "period": "03'2024",
+        "month": "2024-03",
+        "rightDirection": 41.90194774014562,
+        "wrongDirection": 38.91747305952343,
+        "hardToSay": 19.18057920033095
+      },
+      {
+        "period": "04'2024",
+        "month": "2024-04",
+        "rightDirection": 41.363651395121785,
+        "wrongDirection": 43.50742080806899,
+        "hardToSay": 15.128927796809219
+      },
+      {
+        "period": "05'2024",
+        "month": "2024-05",
+        "rightDirection": 34.84444891560077,
+        "wrongDirection": 50.97867366382419,
+        "hardToSay": 14.176877420575028
+      },
+      {
+        "period": "06'2024",
+        "month": "2024-06",
+        "rightDirection": 33.61864329091194,
+        "wrongDirection": 52.11878171875044,
+        "hardToSay": 14.262574990337615
+      },
+      {
+        "period": "07'2024",
+        "month": "2024-07",
+        "rightDirection": 34.70074142929324,
+        "wrongDirection": 49.36650724701482,
+        "hardToSay": 15.932751323691935
+      },
+      {
+        "period": "08'2024",
+        "month": "2024-08",
+        "rightDirection": 46.91905488106352,
+        "wrongDirection": 36.36863428624657,
+        "hardToSay": 16.712310832689905
+      },
+      {
+        "period": "09'2024",
+        "month": "2024-09",
+        "rightDirection": 39.41027310196176,
+        "wrongDirection": 45.169994044058626,
+        "hardToSay": 15.419732853979621
+      },
+      {
+        "period": "10'2024",
+        "month": "2024-10",
+        "rightDirection": 31.48832016785206,
+        "wrongDirection": 52.882818466312244,
+        "hardToSay": 15.628861365835697
+      },
+      {
+        "period": "11'2024",
+        "month": "2024-11",
+        "rightDirection": 33.59106894150453,
+        "wrongDirection": 49.57066945632184,
+        "hardToSay": 16.838261602173628
+      },
+      {
+        "period": "12'2024",
+        "month": "2024-12",
+        "rightDirection": 30.164417050871528,
+        "wrongDirection": 53.84877215864476,
+        "hardToSay": 15.986810790483705
+      },
+      {
+        "period": "01'2025",
+        "month": "2025-01",
+        "rightDirection": 33.20845760763736,
+        "wrongDirection": 48.40746802306114,
+        "hardToSay": 18.38407436930149
+      },
+      {
+        "period": "02'2025",
+        "month": "2025-02",
+        "rightDirection": 34.542674568020615,
+        "wrongDirection": 49.57899290487177,
+        "hardToSay": 15.87833252710762
+      },
+      {
+        "period": "03'2025",
+        "month": "2025-03",
+        "rightDirection": 42.33366560707499,
+        "wrongDirection": 39.07067995341739,
+        "hardToSay": 18.59565443950762
+      },
+      {
+        "period": "04'2025",
+        "month": "2025-04",
+        "rightDirection": 40.61194370271266,
+        "wrongDirection": 44.43049851919477,
+        "hardToSay": 14.95755777809257
+      },
+      {
+        "period": "05'2025",
+        "month": "2025-05",
+        "rightDirection": 42.06845295945094,
+        "wrongDirection": 41.11014782362468,
+        "hardToSay": 16.821399216924384
+      },
+      {
+        "period": "06'2025",
+        "month": "2025-06",
+        "rightDirection": 41.711598867951146,
+        "wrongDirection": 41.48597958151118,
+        "hardToSay": 16.802421550537673
+      },
+      {
+        "period": "07'2025",
+        "month": "2025-07",
+        "rightDirection": 40.54710920570921,
+        "wrongDirection": 46.24953304968699,
+        "hardToSay": 13.20335774460379
+      },
+      {
+        "period": "08'2025",
+        "month": "2025-08",
+        "rightDirection": 43.15497528050265,
+        "wrongDirection": 40.47275589575796,
+        "hardToSay": 16.372268823739393
+      },
+      {
+        "period": "09'2025",
+        "month": "2025-09",
+        "rightDirection": 38.614808998781434,
+        "wrongDirection": 45.673161480819445,
+        "hardToSay": 15.712029520399117
+      },
+      {
+        "period": "10'2025",
+        "month": "2025-10",
+        "rightDirection": 38.48448150887695,
+        "wrongDirection": 47.03455973464443,
+        "hardToSay": 14.480958756478618
+      },
+      {
+        "period": "11'2025",
+        "month": "2025-11",
+        "rightDirection": 31.7,
+        "wrongDirection": 53.2,
+        "hardToSay": 15.1
+      }
+    ],
+    "currentValues": {
+      "rightDirection": 31.7,
+      "wrongDirection": 53.2,
+      "hardToSay": 15.1
+    }
+  },
+  "presidential": {
+    "title": {
+      "uk": "Голосування на президентських виборах",
+      "en": "Presidential Election Voting"
+    },
+    "question": {
+      "uk": "Скажіть, будь ласка, за кого б ви проголосували на майбутніх президентських виборах?",
+      "en": "Please tell us, who would you vote for in the upcoming presidential elections?"
+    },
+    "candidates": [
+      {
+        "id": "zelenskyy",
+        "name": {
+          "uk": "Володимир Зеленський",
+          "en": "Volodymyr Zelenskyy"
+        },
+        "results": {
+          "2025-12": {
+            "value": 23.93684492577157,
+            "isSignificant": true
+          },
+          "2025-11": {
+            "value": 20.19407392214651,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 24.3,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "zaluzhnyi",
+        "name": {
+          "uk": "Валерій Залужний",
+          "en": "Valerii Zaluzhnyi"
+        },
+        "results": {
+          "2025-12": {
+            "value": 17.149212062707065,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 19.35340571091736,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 16.4,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "poroshenko",
+        "name": {
+          "uk": "Петро Порошенко",
+          "en": "Petro Poroshenko"
+        },
+        "results": {
+          "2025-12": {
+            "value": 4.259447036727504,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 4.642639396279947,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 4.6,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "budanov",
+        "name": {
+          "uk": "Кирило Буданов",
+          "en": "Kyrylo Budanov"
+        },
+        "results": {
+          "2025-12": {
+            "value": 4.221534828982529,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 5.15171547800068,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 4.7,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "razumkov",
+        "name": {
+          "uk": "Дмитро Разумков",
+          "en": "Dmytro Razumkov"
+        },
+        "results": {
+          "2025-12": {
+            "value": 3.572585457049694,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 2.6115412316887996,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 2.4,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "biletskyi",
+        "name": {
+          "uk": "Андрій Білецький",
+          "en": "Andriy Biletskyi"
+        },
+        "results": {
+          "2025-12": {
+            "value": 3.277967427155349,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 3.336611578355037,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 3,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "tymoshenko",
+        "name": {
+          "uk": "Юлія Тимошенко",
+          "en": "Yulia Tymoshenko"
+        },
+        "results": {
+          "2025-12": {
+            "value": 2.8866590014788662,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 1.5039839865419886,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 2.3,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "prokopenko",
+        "name": {
+          "uk": "Денис Прокопенко (Редіс)",
+          "en": "Denys Prokopenko (Redis)"
+        },
+        "results": {
+          "2025-12": {
+            "value": 1.7534220348562415,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 1.1903554351081573,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 1.4,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "usyk",
+        "name": {
+          "uk": "Олександр Усик",
+          "en": "Oleksandr Usyk"
+        },
+        "results": {
+          "2025-12": {
+            "value": 1.74467647840955,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 3.492711650370935,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 2,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "prytula",
+        "name": {
+          "uk": "Сергій Притула",
+          "en": "Serhiy Prytula"
+        },
+        "results": {
+          "2025-12": {
+            "value": 1.4411298495260703,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 1.341438227445058,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 2.4,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "boyko",
+        "name": {
+          "uk": "Юрій Бойко",
+          "en": "Yuriy Boyko"
+        },
+        "results": {
+          "2025-12": {
+            "value": 1.388342683671134,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 0.7601981808909902,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": null,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "hroysman",
+        "name": {
+          "uk": "Володимир Гройсман",
+          "en": "Volodymyr Groysman"
+        },
+        "results": {
+          "2025-12": {
+            "value": 0.8793958344475609,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 1.1728387129905022,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 0.5,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "liashko",
+        "name": {
+          "uk": "Олег Ляшко",
+          "en": "Oleh Liashko"
+        },
+        "results": {
+          "2025-12": {
+            "value": 0.8014113746673821,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 1.0014276362289707,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 0.2,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "honcharenko",
+        "name": {
+          "uk": "Олексій Гончаренко",
+          "en": "Oleksiy Honcharenko"
+        },
+        "results": {
+          "2025-12": {
+            "value": 0.7752532624532742,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 1.3417154023857534,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 0.9,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "klychko",
+        "name": {
+          "uk": "Віталій Кличко",
+          "en": "Vitaliy Klychko"
+        },
+        "results": {
+          "2025-12": {
+            "value": 0.4836366024464555,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 0.40025603058087045,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 0.4,
+            "isSignificant": false
+          }
+        }
+      }
+    ],
+    "otherOptions": [
+      {
+        "id": "other",
+        "name": {
+          "uk": "Інший",
+          "en": "Other"
+        },
+        "results": {
+          "2025-12": {
+            "value": 1.5936116694038591,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 3.1013686863706202,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 2.8,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "spoil-ballot",
+        "name": {
+          "uk": "Зіпсую бюлетень/Залишу бюлетень пустим",
+          "en": "Will spoil ballot / Leave blank"
+        },
+        "results": {
+          "2025-12": {
+            "value": 3.1571276532671213,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 1.460799550598191,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 3.5,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "wont-vote",
+        "name": {
+          "uk": "Не піду на вибори",
+          "en": "Will not vote"
+        },
+        "results": {
+          "2025-12": {
+            "value": 5.508773360517373,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 2.4470650978434376,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 2.4,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "undecided",
+        "name": {
+          "uk": "Важко сказати / Відмова",
+          "en": "Hard to say / Refused"
+        },
+        "results": {
+          "2025-12": {
+            "value": 21.1689684564614,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 23.434597297227032,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 22.7,
+            "isSignificant": false
+          }
+        }
+      }
+    ]
+  },
+  "parliamentary": {
+    "title": {
+      "uk": "Голосування на виборах до Верховної ради",
+      "en": "Parliamentary Election Voting"
+    },
+    "question": {
+      "uk": "За яку партію з цього списку ви б проголосували на майбутніх парламентських виборах?",
+      "en": "Which party from this list would you vote for in the upcoming parliamentary elections?"
+    },
+    "parties": [
+      {
+        "id": "zaluzhnyi-party",
+        "name": {
+          "uk": "Партія Валерія Залужного",
+          "en": "Valerii Zaluzhnyi's Party"
+        },
+        "results": {
+          "2025-12": {
+            "value": 18.350959149467563,
+            "isSignificant": true
+          },
+          "2025-11": {
+            "value": 22.06981800625686,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 18.5,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "zelenskyy-party",
+        "name": {
+          "uk": "Партія Володимира Зеленського",
+          "en": "Volodymyr Zelenskyy's Party"
+        },
+        "results": {
+          "2025-12": {
+            "value": 16.08697819794413,
+            "isSignificant": true
+          },
+          "2025-11": {
+            "value": 11.572244700271938,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 16,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "european-solidarity",
+        "name": {
+          "uk": "Європейська Солідарність (Петро Порошенко)",
+          "en": "European Solidarity (Petro Poroshenko)"
+        },
+        "results": {
+          "2025-12": {
+            "value": 6.1011180210657825,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 6.928604406055393,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 5.8,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "budanov-party",
+        "name": {
+          "uk": "Партія Кирила Буданова",
+          "en": "Kyrylo Budanov's Party"
+        },
+        "results": {
+          "2025-12": {
+            "value": 6.008061249603246,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 7.263040711304085,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 7.3,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "azov",
+        "name": {
+          "uk": "Азов (Денис Прокопенко (Редіс))",
+          "en": "Azov (Denys Prokopenko (Redis))"
+        },
+        "results": {
+          "2025-12": {
+            "value": 5.483568134262166,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 5.708180472154235,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 5.7,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "smart-politics",
+        "name": {
+          "uk": "Розумна політика Дмитра Разумкова",
+          "en": "Smart Politics of Dmytro Razumkov"
+        },
+        "results": {
+          "2025-12": {
+            "value": 5.298444958999258,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 5.011767580121127,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 5,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "usyk-party",
+        "name": {
+          "uk": "Партія Олександра Усика",
+          "en": "Oleksandr Usyk's Party"
+        },
+        "results": {
+          "2025-12": {
+            "value": 4.643401505402084,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 4.728917376786874,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 4.7,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "batkivshchyna",
+        "name": {
+          "uk": "Всеукраїнське об'єднання \"Батьківщина\" (Юлія Тимошенко)",
+          "en": "All-Ukrainian Union \"Fatherland\" (Yulia Tymoshenko)"
+        },
+        "results": {
+          "2025-12": {
+            "value": 3.7783168194818444,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 2.143901208248516,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 2.5,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "third-corps",
+        "name": {
+          "uk": "Партія Андрія Білецького (Третій корпус)",
+          "en": "Andriy Biletskyi's Party (Third Corps)"
+        },
+        "results": {
+          "2025-12": {
+            "value": 3.502317007823329,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 3.9423876580332085,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 3.9,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "khartia",
+        "name": {
+          "uk": "Партія Хартія (Сергій Жадан, Юрій Бутусов, Павло Шеремета)",
+          "en": "Khartia Party (Serhiy Zhadan, Yuriy Butusov, Pavlo Sheremeta)"
+        },
+        "results": {
+          "2025-12": {
+            "value": 2.3319666820189364,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 3.5776604312216125,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 3.6,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "prytula-party",
+        "name": {
+          "uk": "Партія Сергія Притули",
+          "en": "Serhiy Prytula's Party"
+        },
+        "results": {
+          "2025-12": {
+            "value": 2.144832087999732,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 3.1263647457968475,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 3.1,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "radical-party",
+        "name": {
+          "uk": "Радикальна партія Олега Ляшка",
+          "en": "Radical Party of Oleh Liashko"
+        },
+        "results": {
+          "2025-12": {
+            "value": 2.136938261302559,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 1.499130739995689,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 0.7,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "ukrainian-strategy",
+        "name": {
+          "uk": "Українська Стратегія Гройсмана",
+          "en": "Ukrainian Strategy of Groysman"
+        },
+        "results": {
+          "2025-12": {
+            "value": 1.3380410004610295,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 0.7262215398852022,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 0.6,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "udar",
+        "name": {
+          "uk": "Партія «Удар» (Віталій Кличко)",
+          "en": "UDAR Party (Vitaliy Klychko)"
+        },
+        "results": {
+          "2025-12": {
+            "value": 0.9116562342894341,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 0.5800618636361804,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 0.5,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "svoboda",
+        "name": {
+          "uk": "Всеукраїнське об'єднання \"Свобода\" (Олег Тягнибок)",
+          "en": "All-Ukrainian Union \"Svoboda\" (Oleh Tiahnybok)"
+        },
+        "results": {
+          "2025-12": {
+            "value": 0.5295258001778111,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 1.640371846235188,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 0.5,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "tigipko-party",
+        "name": {
+          "uk": "Партія Сергія Тігіпка",
+          "en": "Serhiy Tigipko's Party"
+        },
+        "results": {
+          "2025-12": {
+            "value": 0.4967078995247355,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 0,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": null,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "holos",
+        "name": {
+          "uk": "Голос (Кіра Рудик)",
+          "en": "Voice (Kira Rudyk)"
+        },
+        "results": {
+          "2025-12": {
+            "value": 0.223253800275948,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 0.6225311767017624,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 0.6,
+            "isSignificant": false
+          }
+        }
+      }
+    ],
+    "otherOptions": [
+      {
+        "id": "other-party",
+        "name": {
+          "uk": "Інша партія",
+          "en": "Other party"
+        },
+        "results": {
+          "2025-12": {
+            "value": 0.5035358874111324,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 0.16708849883188245,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 0.6,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "spoil-ballot-parliament",
+        "name": {
+          "uk": "Зіпсую бюлетень/Лишив бюлетень пустим",
+          "en": "Will spoil ballot / Leave blank"
+        },
+        "results": {
+          "2025-12": {
+            "value": 2.5522852161705263,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 0.8063354154725082,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 0.8,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "wont-vote-parliament",
+        "name": {
+          "uk": "Не піду на вибори",
+          "en": "Will not vote"
+        },
+        "results": {
+          "2025-12": {
+            "value": 4.531390533339793,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 1.8181143000544002,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 19.2,
+            "isSignificant": false
+          }
+        }
+      },
+      {
+        "id": "undecided-parliament",
+        "name": {
+          "uk": "Важко сказати/Відмова",
+          "en": "Hard to say / Refused"
+        },
+        "results": {
+          "2025-12": {
+            "value": 13.04670155297896,
+            "isSignificant": false
+          },
+          "2025-11": {
+            "value": 16.06725732293649,
+            "isSignificant": false
+          },
+          "2025-10": {
+            "value": 16.1,
+            "isSignificant": false
+          }
+        }
+      }
+    ]
+  },
+  "ui": {
+    "navigation": {
+      "home": {
+        "uk": "Головна",
+        "en": "Home"
+      },
+      "methodology": {
+        "uk": "Методологія",
+        "en": "Methodology"
+      },
+      "direction": {
+        "uk": "Вектор руху",
+        "en": "Direction"
+      },
+      "presidential": {
+        "uk": "Президент",
+        "en": "President"
+      },
+      "parliamentary": {
+        "uk": "Парламент",
+        "en": "Parliament"
+      }
+    },
+    "labels": {
+      "showAll": {
+        "uk": "Показати всіх",
+        "en": "Show all"
+      },
+      "showLess": {
+        "uk": "Показати менше",
+        "en": "Show less"
+      },
+      "statisticalNote": {
+        "uk": "статистично значущі відмінності",
+        "en": "statistically significant differences"
+      },
+      "thankYou": {
+        "uk": "Дякуємо!",
+        "en": "Thank you!"
+      },
+      "respondents": {
+        "uk": "респондентів",
+        "en": "respondents"
+      },
+      "legend": {
+        "uk": "Легенда",
+        "en": "Legend"
+      },
+      "download": {
+        "uk": "Завантажити",
+        "en": "Download"
+      },
+      "share": {
+        "uk": "Поділитися",
+        "en": "Share"
+      },
+      "language": {
+        "uk": "Мова",
+        "en": "Language"
+      },
+      "theme": {
+        "uk": "Тема",
+        "en": "Theme"
+      },
+      "light": {
+        "uk": "Світла",
+        "en": "Light"
+      },
+      "dark": {
+        "uk": "Темна",
+        "en": "Dark"
+      },
+      "system": {
+        "uk": "Системна",
+        "en": "System"
+      }
+    },
+    "months": {
+      "10": {
+        "uk": "Жовтень",
+        "en": "October"
+      },
+      "11": {
+        "uk": "Листопад",
+        "en": "November"
+      },
+      "12": {
+        "uk": "Грудень",
+        "en": "December"
+      },
+      "01": {
+        "uk": "Січень",
+        "en": "January"
+      },
+      "02": {
+        "uk": "Лютий",
+        "en": "February"
+      },
+      "03": {
+        "uk": "Березень",
+        "en": "March"
+      },
+      "04": {
+        "uk": "Квітень",
+        "en": "April"
+      },
+      "05": {
+        "uk": "Травень",
+        "en": "May"
+      },
+      "06": {
+        "uk": "Червень",
+        "en": "June"
+      },
+      "07": {
+        "uk": "Липень",
+        "en": "July"
+      },
+      "08": {
+        "uk": "Серпень",
+        "en": "August"
+      },
+      "09": {
+        "uk": "Вересень",
+        "en": "September"
+      }
+    }
+  },
+  "theme": {
+    "colors": {
+      "light": {
+        "background": "#FFFFFF",
+        "backgroundSecondary": "#F5F5F5",
+        "foreground": "#1A1A1A",
+        "foregroundSecondary": "#4A4A4A",
+        "primary": "#0D7377",
+        "accent": "#C41E3A",
+        "border": "#E5E5E5",
+        "chartPrimary": "#0D7377",
+        "chartSecondary": "#C41E3A",
+        "chartNeutral": "#808080",
+        "chartGrid": "#E5E5E5"
+      },
+      "dark": {
+        "background": "#0A1A1D",
+        "backgroundSecondary": "#0F2528",
+        "foreground": "#FAFAFA",
+        "foregroundSecondary": "#E0E0E0",
+        "primary": "#2AB5BA",
+        "accent": "#E8475E",
+        "border": "#1E3A3D",
+        "chartPrimary": "#2AB5BA",
+        "chartSecondary": "#E8475E",
+        "chartNeutral": "#A8A8A8",
+        "chartGrid": "#1E3A3D"
+      }
+    },
+    "gradients": {
+      "heroLight": "linear-gradient(180deg, #0D7377 0%, #064850 100%)",
+      "heroDark": "linear-gradient(180deg, #0F4C5C 0%, #052025 100%)"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "validation_date": "2025-12-31",
+  "json_source": "/mnt/g/www/uelectoral.data/docs/uelectoral-data-v2.json",
+  "version": "2.0.0",
+  "counts": {
+    "meta": {
+      "version": "2.0.0",
+      "last_updated": "2025-12-26T00:00:00Z",
+      "current_survey": "2025-12",
+      "previous_survey": "2025-11"
+    },
+    "methodology": {
+      "sample_size": 1000,
+      "margin_of_error": 3.1,
+      "confidence_level": 0.95
+    },
+    "surveys": {
+      "total_periods": 3,
+      "periods": ["2025-10", "2025-11", "2025-12"]
+    },
+    "country_direction": {
+      "time_series_points": 48,
+      "coverage_start": "2022-03",
+      "coverage_end": "2025-12",
+      "series_types": 3,
+      "current_values": {
+        "wrong_direction": 49.0,
+        "right_direction": 35.8,
+        "hard_to_say": 15.3
+      }
+    },
+    "presidential": {
+      "candidates": 15,
+      "other_options": 4,
+      "total_entities": 19,
+      "data_points_per_period": 19,
+      "total_data_points": 57,
+      "candidate_ids": [
+        "zelenskyy",
+        "zaluzhnyi",
+        "poroshenko",
+        "budanov",
+        "razumkov",
+        "biletskyi",
+        "tymoshenko",
+        "prokopenko",
+        "usyk",
+        "prytula",
+        "boyko",
+        "hroysman",
+        "liashko",
+        "honcharenko",
+        "klychko"
+      ],
+      "other_option_ids": [
+        "other",
+        "spoil-ballot",
+        "wont-vote",
+        "undecided"
+      ]
+    },
+    "parliamentary": {
+      "parties": 17,
+      "other_options": 4,
+      "total_entities": 21,
+      "data_points_per_period": 21,
+      "total_data_points": 63,
+      "party_ids": [
+        "zaluzhnyi-party",
+        "zelenskyy-party",
+        "european-solidarity",
+        "budanov-party",
+        "azov",
+        "smart-politics",
+        "usyk-party",
+        "batkivshchyna",
+        "third-corps",
+        "khartia",
+        "prytula-party",
+        "radical-party",
+        "ukrainian-strategy",
+        "udar",
+        "svoboda",
+        "tigipko-party",
+        "holos"
+      ],
+      "other_option_ids": [
+        "other-party",
+        "spoil-ballot-parliament",
+        "wont-vote-parliament",
+        "undecided-parliament"
+      ]
+    },
+    "ui": {
+      "navigation_items": 5,
+      "labels": 13,
+      "months": 12,
+      "total_ui_strings": 30
+    },
+    "theme": {
+      "color_modes": 2,
+      "colors_per_mode": 11,
+      "gradients": 2,
+      "total_color_definitions": 22
+    },
+    "totals": {
+      "bilingual_text_pairs": 150,
+      "election_data_points": 120,
+      "time_series_values": 144,
+      "typescript_types": 42,
+      "type_guards": 3,
+      "utility_functions": 10
+    }
+  },
+  "validation_status": {
+    "json_structure": "VALID",
+    "typescript_compilation": "SUCCESS",
+    "all_bilingual_fields": "VALIDATED",
+    "null_values_handled": true,
+    "statistical_significance_tracked": true
+  }
+}
