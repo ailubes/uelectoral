@@ -12,6 +12,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { chartConfig, chartColors, formatPercent } from "@/lib/chart-config";
+import { ChartTooltip } from "./chart-tooltip";
 
 export interface LineChartDataPoint {
   period: string;
@@ -100,11 +101,8 @@ export function LineChart({
 
         {showTooltip && (
           <Tooltip
-            contentStyle={chartConfig.tooltip.contentStyle}
-            labelStyle={{ color: "var(--foreground)", marginBottom: "8px", fontWeight: 600 }}
-            itemStyle={{ color: "var(--foreground)" }}
+            content={<ChartTooltip formatValue={formatPercent} />}
             cursor={chartConfig.tooltip.cursor}
-            formatter={(value: number | undefined) => value !== undefined ? formatPercent(value) : ""}
           />
         )}
 
