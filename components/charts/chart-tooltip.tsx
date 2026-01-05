@@ -1,9 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { TooltipProps } from "recharts";
 
-interface ChartTooltipProps extends TooltipProps<number, string> {
+interface PayloadEntry {
+  value: number;
+  name: string;
+  color?: string;
+}
+
+interface ChartTooltipProps {
+  active?: boolean;
+  payload?: PayloadEntry[];
+  label?: string;
   formatValue?: (value: number) => string;
 }
 
