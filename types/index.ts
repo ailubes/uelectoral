@@ -78,21 +78,3 @@ export {
   isThemeMode,
   hasElectionValue
 } from './data';
-
-// Re-export usage examples
-export {
-  getLocalizedText,
-  getCandidateByPeriod,
-  getSignificantCandidates,
-  getLatestTimeSeriesPoint,
-  getTimeSeriesByYear,
-  safeGetLanguage,
-  getCandidateValue,
-  sortCandidatesByValue,
-  getThemeColor,
-  calculateValidVotePercentage
-} from './usage-example';
-
-export type {
-  CandidateCardProps
-} from './usage-example';

@@ -44,30 +44,24 @@ const mockTimeSeriesPoint: TimeSeriesDataPoint = {
   hardToSay: 15.3
 };
 
-// Type guard tests
+// Type guard tests - verify type guards compile correctly
 const testLang: string = "uk";
-if (isLanguage(testLang)) {
-  console.log(`Valid language: ${testLang}`);
-}
+const _isValidLang = isLanguage(testLang);
 
 const testTheme: string = "dark";
-if (isThemeMode(testTheme)) {
-  console.log(`Valid theme: ${testTheme}`);
-}
+const _isValidTheme = isThemeMode(testTheme);
 
 // Election result value check
 const result = mockCandidate.results["2025-12"];
-if (hasElectionValue(result)) {
-  console.log(`Candidate has value: ${result.value}%`);
-}
+const _hasValue = hasElectionValue(result);
 
 // Function to demonstrate type inference
 function getTranslation(text: BilingualText, lang: Language): string {
   return text[lang];
 }
 
-// Test usage
-console.log(getTranslation(mockBilingualText, "uk"));
-console.log(getTranslation(mockCandidate.name, "en"));
+// Verify function types work correctly
+const _ukText = getTranslation(mockBilingualText, "uk");
+const _enName = getTranslation(mockCandidate.name, "en");
 
 export {};

@@ -93,12 +93,5 @@ export function formatPercent(value: number): string {
   return `${value.toFixed(1)}%`;
 }
 
-// Helper: Format period (YYYY-MM to readable)
-// DEPRECATED: Use formatChartPeriod from date-formatter instead
-// This is kept for backward compatibility but delegates to the new formatter
-export function formatPeriodShort(period: string, locale: 'uk' | 'en' = 'uk'): string {
-  return formatChartPeriod(period, locale);
-}
-
-// Re-export the new formatter for convenience
+// Re-export the formatter for convenience
 export { formatChartPeriod };
