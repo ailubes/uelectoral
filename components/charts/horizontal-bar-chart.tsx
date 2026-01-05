@@ -106,6 +106,8 @@ export function HorizontalBarChart({
             {showTooltip && (
               <Tooltip
                 contentStyle={chartConfig.tooltip.contentStyle}
+                labelStyle={{ color: "var(--foreground)", marginBottom: "8px", fontWeight: 600 }}
+                itemStyle={{ color: "var(--foreground)" }}
                 cursor={chartConfig.tooltip.cursor}
                 formatter={(value: number | undefined) => value !== undefined ? formatPercent(value) : ""}
               />

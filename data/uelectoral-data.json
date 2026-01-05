@@ -497,12 +497,19 @@
         "rightDirection": 31.7,
         "wrongDirection": 53.2,
         "hardToSay": 15.1
+      },
+      {
+        "period": "12'2025",
+        "month": "2025-12",
+        "rightDirection": 35.8,
+        "wrongDirection": 49,
+        "hardToSay": 15.3
       }
     ],
     "currentValues": {
-      "rightDirection": 31.7,
-      "wrongDirection": 53.2,
-      "hardToSay": 15.1
+      "rightDirection": 35.8,
+      "wrongDirection": 49,
+      "hardToSay": 15.3
     }
   },
   "presidential": {
