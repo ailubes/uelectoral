@@ -1,0 +1,19 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "methodology": "Methodology",
+    "countryDirection": "Country Path",
+    "president": "President",
+    "parliament": "Parliament"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
+}
