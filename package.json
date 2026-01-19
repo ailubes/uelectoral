@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "npm run dev --prefix app",
+    "convert-data": "npx tsx scripts/convert-excel-to-json.ts"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5",
+    "xlsx": "^0.18.5"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}
