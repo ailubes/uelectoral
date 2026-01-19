@@ -25,6 +25,10 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Uelectoral.data - Ukrainian Electoral Data Platform",
   description: "Comprehensive electoral data and insights for Ukraine",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
