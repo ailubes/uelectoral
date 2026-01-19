@@ -68,10 +68,10 @@ export function Navbar() {
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo / Brand */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 min-w-0">
             <a
               href="#home"
-              className="flex items-center"
+              className="flex items-center h-8 sm:h-10 md:h-12"
             >
               <Image
                 src={logoSrc}
@@ -79,7 +79,7 @@ export function Navbar() {
                 width={512}
                 height={100}
                 priority
-                className="w-auto h-8 sm:h-10 md:h-12"
+                className="w-auto h-full"
               />
             </a>
           </div>
