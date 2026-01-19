@@ -77,7 +77,7 @@ export function HeroSection() {
       ))}
 
       {/* Main content */}
-      <div className="max-w-[1120px] w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1120px] w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10 overflow-hidden">
         <div className="max-w-4xl">
           {/* Pre-title marker */}
           <div className="flex items-center gap-3 mb-6 animate-reveal">
