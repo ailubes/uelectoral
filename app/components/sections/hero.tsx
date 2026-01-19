@@ -34,13 +34,15 @@ export function HeroSection() {
       contained={false}
     >
       {/* Layer 1: Base image with Ken Burns animation */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 w-full h-full">
         <Image
-          src="/images/hero-bg-v3.png"
-          alt="Analytics Dashboard"
+          src="/images/hero-bg.png"
+          alt="Hero Background"
           fill
+          sizes="100vw"
           className="object-cover animate-hero-ken-burns"
           priority
+          quality={85}
         />
       </div>
 
