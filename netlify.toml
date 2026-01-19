@@ -1,0 +1,8 @@
+# Root netlify configuration - redirect to app subdirectory
+[build]
+  base = "app"
+  command = "npm ci --legacy-peer-deps && npm run build"
+  publish = "app/.next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
