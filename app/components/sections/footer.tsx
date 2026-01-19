@@ -53,8 +53,8 @@ export function FooterSection() {
               <Image
                 src="/images/logo-dark.png"
                 alt="Uelectoral.data Logo"
-                width={1024}
-                height={512}
+                width={512}
+                height={100}
                 className="w-auto h-12"
               />
             </div>

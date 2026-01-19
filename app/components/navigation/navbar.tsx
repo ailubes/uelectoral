@@ -76,8 +76,8 @@ export function Navbar() {
               <Image
                 src={logoSrc}
                 alt="Uelectoral.data Logo"
-                width={1024}
-                height={512}
+                width={512}
+                height={100}
                 priority
                 className="w-auto h-8 sm:h-10 md:h-12"
               />
